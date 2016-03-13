@@ -101,3 +101,11 @@ hr {
 input, select {
     vertical-align:middle;
 }
+div#upc_pl{
+	border:0px;
+	padding:0px;
+	margin-left:0px;
+	height:100px;
+	width:80px;
+	text-align:1px solid #ffffff;
+} 
