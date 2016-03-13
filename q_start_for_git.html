@@ -4,6 +4,25 @@
 	<meta charset="UTF-8" />
 	<title>q_start_for_git</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+	function writeOptions(startNumber,endNumber){
+		var optionCounter;
+		for(optionCounter=startNumber;optionCounter<=endNumber;optionCounter++){
+			document.write("<option value=" + optionCounter + ">" + optionCounter + "</option>");
+		}
+	}
+	function writeMonthOptions(){
+		var theMonth;
+		var monthCounter;
+		var theDate = new Date(1);
+		for(monthCounter = 0; monthCounter < 12; monthCounter++){
+			theDate.setMonth(monthCounter);
+			theMonth =  theDate.toString();
+			theMonth = theMonth.substr(4,3);
+			document.write("<option value=" + theMonth + ">" + theMonth + "</option>");
+		}
+	}
+	</script>
 </head>
 <body onload='window_onload()'>
 	<div id='pyx'>
