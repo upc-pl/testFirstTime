@@ -1,73 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
+<meta charset="UTF-8">
 	<title>q_start_for_git</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript">
-	function writeOptions(startNumber,endNumber){
-		var optionCounter;
-		for(optionCounter=startNumber;optionCounter<=endNumber;optionCounter++){
-			document.write("<option value=" + optionCounter + ">" + optionCounter + "</option>");
-		}
-	}
-	function writeMonthOptions(){
-		var theMonth;
-		var monthCounter;
-		var theDate = new Date(1);
-		for(monthCounter = 0; monthCounter < 12; monthCounter++){
-			theDate.setMonth(monthCounter);
-			theMonth =  theDate.toString();
-			theMonth = theMonth.substr(4,3);
-			document.write("<option value=" + theMonth + ">" + theMonth + "</option>");
-		}
-	}
-	</script>
+	<link rel="stylesheet" type="text/css" href="css/qxf.css">
 </head>
-<body onload='window_onload()'>
-	<div id='pyx'>
-			<form action='' name='farm1'>
-		<p>
-			First Date<br />
-			<select name='firstDay' onchange=''>
-				<script type="text/javascript">
-				writeOptions(1,31);
-				</script>
-			</select>
-			<select name='firstMonth' onchange=''>
-				<script type="text/javascript">
-				writeMonthOptions();
-				</script>
-			</select>
-			<select name="firstYear" onchange=''>
-				<script type="text/javascript">
-				writeOptions(1970,2020);
-				</script>
-			</select>	
-		</p>
-		<p>
-			Second Date<br />
-			<select name='secondDay' onchange=''>
-				<script type="text/javascript">
-				writeOptions(1,31);
-				</script>
-			</select>
-			<select name='secondMonth' onchange=''>
-				<script type="text/javascript">
-				writeMonthOptions();
-				</script>
-			</select>
-			<select name='secondYear' onchange=''>
-				<script type="text/javascript">
-				writeOptions(1970,2020);
-				</script>
-			</select>	
-		</p>
-		<p>
-			Total difference in days:
-			<input type='text' name='txtDays' value='0' readonly="readonly" />
-		</p>
-	</form>
-	</div>
+<body>
+
+<div id="qxf">
+	
+	<p>夜阑卧听风雨声，铁马冰河入梦来。</p>
+
+</div>
+
 </body>
 </html>
