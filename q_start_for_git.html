@@ -5,6 +5,50 @@
 	<title>q_start_for_git</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onload='window_onload()'>
+	<div id='pyx'>
+			<form action='' name='farm1'>
+		<p>
+			First Date<br />
+			<select name='firstDay' onchange=''>
+				<script type="text/javascript">
+				writeOptions(1,31);
+				</script>
+			</select>
+			<select name='firstMonth' onchange=''>
+				<script type="text/javascript">
+				writeMonthOptions();
+				</script>
+			</select>
+			<select name="firstYear" onchange=''>
+				<script type="text/javascript">
+				writeOptions(1970,2020);
+				</script>
+			</select>	
+		</p>
+		<p>
+			Second Date<br />
+			<select name='secondDay' onchange=''>
+				<script type="text/javascript">
+				writeOptions(1,31);
+				</script>
+			</select>
+			<select name='secondMonth' onchange=''>
+				<script type="text/javascript">
+				writeMonthOptions();
+				</script>
+			</select>
+			<select name='secondYear' onchange=''>
+				<script type="text/javascript">
+				writeOptions(1970,2020);
+				</script>
+			</select>	
+		</p>
+		<p>
+			Total difference in days:
+			<input type='text' name='txtDays' value='0' readonly="readonly" />
+		</p>
+	</form>
+	</div>
 </body>
 </html>
